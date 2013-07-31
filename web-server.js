@@ -1,9 +1,9 @@
-var http = require('http');
-
+http = require('http');
 http.createServer(function(request, response) {
-    response.writeHead(200);        
-    response.write("Hello");
+    response.writeHead(200);
+    response.write("Dog is running.");
     setTimeout(function(){
-        response.end("World");                        
-    }, 5000);
+        response.write("Dog is done.");
+        response.end();
+    }, 2000);
 }).listen(8080);
