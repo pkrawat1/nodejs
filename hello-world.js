@@ -1,0 +1,9 @@
+/*setTimeout(function(){
+    console.log('world');
+},2000)
+console.log('helo');
+*/
+setInterval(function(){
+    console.log('world');
+},2000)
+console.log('helo');
